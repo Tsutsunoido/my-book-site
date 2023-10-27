@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+body {
+  margin: 0;
+  background: #333;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  color: white;
+}
+
+p {
+  margin: 0;
+  color: white;
+}
+
+div {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+.container {
+  /* border: 1px solid blue; */
+  width: calc(100% - 64px);
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/* header */
+
+header .container {
+  padding: 16px 0;
+  text-align: center;
+}
+
+/* blue-border */
+
+.blue-border {
+  background: blue;
+  height: 32px;
+}
+
+/* main */
+
+main {
+  padding: 32px 0;
+}
+
+main .container {
+  /* border: 2px solid white; */
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 0 8px;
+}
+
+main section {
+  display: flex;
+  gap: 32px;
+}
+
+main .context {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 50%;
+}
+
+main .context .open {
+  border: 1px solid white;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  margin: 16px auto;
+  padding: 8px 0;
+  cursor: pointer;
+}
+
+main .context .open:hover {
+  opacity: .7;
+}
+
+main section + section {
+  margin-top: 64px;
+}
+
+main .imagin {
+  width: 50%;
+}
+
+main .imagin img {
+  width: 100%;
+}
+
+/* modal */
+
+.modal {
+  position: absolute;
+  top: 120px;
+  right: 0;
+  left: 0;
+  bottom: 32px; 
+  margin: 32px auto;
+  transition: transform .8s;
+}
+
+.modal .container {
+  box-shadow: 0 0 8px;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.modal img {
+  width: 200px;
+}
+
+.modal .container h3 {
+  margin-top: 32px;
+}
+
+.hidden {
+  display: none;
+}
+
+.move {
+  transform: translate(0, -1000px);
+}
+
+.modal .close {
+  border: 1px solid white;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  margin: 16px auto;
+  padding: 8px 0;
+  cursor: pointer;
+} 
+
+.modal .close:hover {
+  opacity: .7;
+}
+
